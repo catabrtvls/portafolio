@@ -480,6 +480,10 @@ img {
   text-decoration: underline;
 }
 
+.nav-link-4.w--current {
+  color: #6f80de;
+}
+
 .quick-stack {
   grid-column-gap: 20px;
   max-width: 1200px;
@@ -1923,7 +1927,12 @@ img {
   height: 400px;
 }
 
-.quick-stack-14, .container-30, .image-77, .image-78 {
+.quick-stack-14, .container-30, .image-77 {
+  max-width: 1100px;
+}
+
+.image-78 {
+  object-fit: fill;
   max-width: 1100px;
 }
 
@@ -2380,6 +2389,9 @@ img {
   }
 
   .container-10 {
+    width: 100%;
+    height: auto;
+    padding-top: 140px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -2394,6 +2406,10 @@ img {
     padding-left: 20px;
   }
 
+  .container-10.rooms {
+    height: auto;
+  }
+
   .quick-stack-6 {
     grid-column-gap: 7px;
   }
@@ -2405,7 +2421,13 @@ img {
     padding-left: 0;
   }
 
-  .div-block-11.uber, .div-block-11.info {
+  .div-block-11.uber {
+    height: 300px;
+  }
+
+  .div-block-11.info {
+    object-fit: contain;
+    background-color: #dfd9d9;
     height: 300px;
   }
 
@@ -2414,6 +2436,10 @@ img {
     margin-left: 20px;
     margin-right: 20px;
     padding-right: 0;
+  }
+
+  .container-11.rooms {
+    flex-flow: column;
   }
 
   .body-2.juego {
@@ -2450,7 +2476,7 @@ img {
   }
 
   .section-5.infog {
-    height: 280px;
+    height: auto;
     padding-top: 40px;
   }
 
@@ -2486,7 +2512,7 @@ img {
   }
 
   .section-6.psic {
-    height: 2000px;
+    height: auto;
   }
 
   .section-6.juego {
@@ -2663,8 +2689,10 @@ img {
   }
 
   .image-78 {
+    box-sizing: border-box;
     width: 100%;
     height: auto;
+    max-height: none;
   }
 
   .image-80 {
@@ -2810,6 +2838,11 @@ img {
     font-size: 40px;
   }
 
+  .cell {
+    justify-content: center;
+    align-items: center;
+  }
+
   .div-block-4.color1 {
     object-fit: fill;
   }
@@ -2855,11 +2888,19 @@ img {
     padding-right: 20px;
   }
 
+  .container-10 {
+    padding-top: 0;
+  }
+
   .container-10.libro {
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .container-10.rooms {
+    padding-top: 60px;
   }
 
   .quick-stack-6 {
@@ -2877,13 +2918,22 @@ img {
 
   .div-block-11.info {
     -webkit-text-fill-color: inherit;
-    object-fit: scale-down;
-    background-color: #fde2e0;
+    object-fit: cover;
+    background-color: #dfd9d9;
     background-clip: border-box;
   }
 
   .div-block-11.juego {
     height: 250px;
+  }
+
+  .container-11.psiconecta {
+    flex-flow: column;
+  }
+
+  .container-11.rooms {
+    flex-flow: column;
+    height: auto;
   }
 
   .body-2.miras {
@@ -2898,24 +2948,34 @@ img {
     height: 3500px;
   }
 
+  .body-2.libro {
+    height: auto;
+  }
+
   .section-5 {
     height: 3000px;
   }
 
   .section-5.rooms {
+    flex-flow: column;
     height: 2100px;
+    display: flex;
   }
 
   .section-5.miras {
     height: 900px;
   }
 
-  .section-5.uber {
-    height: 2500px;
+  .section-5.uber, .section-5.libro {
+    height: auto;
   }
 
   .section-5.juego {
     height: 1700px;
+  }
+
+  .section-5.infog {
+    height: auto;
   }
 
   .image-7 {
@@ -2927,13 +2987,17 @@ img {
     height: auto;
   }
 
+  .div-block-12 {
+    width: 100%;
+  }
+
   .section-6.psic {
     height: 1600px;
     margin-left: auto;
   }
 
   .section-6.rooms {
-    height: 2500px;
+    height: auto;
   }
 
   .section-6.juego {
@@ -2968,6 +3032,7 @@ img {
   }
 
   .container-28 {
+    height: auto;
     padding-left: 0;
     padding-right: 0;
   }
@@ -3047,8 +3112,9 @@ img {
   }
 
   .image-78 {
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 90%;
   }
 
   .image-80 {
@@ -3090,6 +3156,7 @@ img {
   .html-embed-2 {
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+    height: auto;
   }
 
   .paragraph-37 {
@@ -3125,6 +3192,14 @@ img {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .menu-button-2.w--open, .nav-menu-2, .nav-menu-3 {
+    background-color: #f7e7f9;
+  }
+
+  .icon-4, .icon-5 {
+    color: #6f80de;
   }
 }
 
@@ -3314,6 +3389,7 @@ img {
 
   .section-5.rooms {
     height: 2200px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3402,7 +3478,8 @@ img {
   }
 
   .section-6.rooms {
-    height: 2250px;
+    height: auto;
+    padding-top: 0;
   }
 
   .section-6.juego {
@@ -3536,6 +3613,10 @@ img {
 
   .heading-13 {
     color: #6f80de;
+  }
+
+  .imagerooms {
+    object-fit: fill;
   }
 
   .image-53 {
