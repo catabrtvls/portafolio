@@ -2238,6 +2238,7 @@ img {
 .image-107 {
   object-fit: fill;
   width: 135px;
+  height: auto;
   margin-top: 0;
   padding-top: 31px;
   padding-bottom: 31px;
@@ -2816,6 +2817,7 @@ img {
   }
 
   .image-107 {
+    height: auto;
     margin-left: auto;
   }
 
@@ -3187,6 +3189,10 @@ img {
 
   .heading-33, .heading-34, .heading-35, .heading-36, .florence {
     color: #6f80de;
+  }
+
+  .image-107 {
+    height: auto;
   }
 
   .cell-25 {
@@ -3770,6 +3776,10 @@ img {
 
   .image-102 {
     height: 80%;
+  }
+
+  .image-107 {
+    height: auto;
   }
 
   .cell-25 {
